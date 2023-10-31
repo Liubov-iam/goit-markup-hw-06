@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="./css/tablet.css">
+   <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body class="site-body">
@@ -28,19 +30,89 @@
                     <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
                 </ul>
                 </nav>
-            <address>
-            <ul class="header-list list">
+                <button class="open-mobile-menu-btn">
+                    <svg class="open-mobile-menu-icon" width="24" height="24" aria-label="mobile menu open icon">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            <address class="address-page">
+            <ul class="address-list list">
                 <li><a class="header-mail-tel link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="header-mail-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
             </ul>
             </address>
             
         </div>
+        <div class="mobile-menu ">
+            <button class="mobile-menu-close-btn">
+                <svg class="mobile-menu-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        
+          
+        
+        
+                <ul class="mobile-menu-list list">
+                    <li class="mobile-menu-item "><a class="mobile-menu-link link active" href="">Studio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Portfolio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Contacts</a></li>
+                </ul>
+           
+
+                <ul class="mobile-addres-list list">
+                    <li><a class="mobile-address-link active-address link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="mobile-address-link link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+                </ul>
+          
+        
+        
+     
+                <ul class="mobile-menu-soc-list list">
+                    <li class="mobile-menu-soc-list-item">
+                        <a class="mobile-menu-soc-list-link" href="" target="_blank" rel="noopener no referrer">
+                            <svg class="mobile-menu-soc-icon" width="24" height="24" aria-label="instagram-icon">
+        
+                                <use href="./images/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+        
+                    <li class="mobile-menu-soc-list-item">
+                        <a class="mobile-menu-soc-list-link" href="">
+                            <svg class="mobile-menu-soc-icon" width="24" height="24">
+        
+                                <use href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-soc-list-item">
+                        <a class="mobile-menu-soc-list-link" href="">
+                            <svg class="mobile-menu-soc-icon" width="24" height="24">
+        
+                                <use href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-soc-list-item">
+                        <a class="mobile-menu-soc-list-link" href="">
+                            <svg class="mobile-menu-soc-icon" width="24" height="24">
+        
+                                <use href="./images/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+          
+        </div>
         </header>
 
 
     
-    <main>
+    <!-- <main> -->
         
         <section class="hero">
             <div class="container">
@@ -106,8 +178,8 @@
             <h2 class="team-title">Our Team</h2>
             <ul class="team-list list">
                 <li class="team-item">
-                    
-                    <img src="./images/Mark.jpg" alt="Product Designer" width="264" height="260">
+                    <img srcset="./images/Mark1x.jpg 1x, ./images/Mark2x.jpg 2x" src="./images/Mark1x.jpg" alt="Product Designer" width="264" height="260"> 
+
                     <div class="team-container">
                     <h3 class="team-item-title">Mark Guerrero</h3>
                     <p class="team-item-text">Product Designer</p>
@@ -160,7 +232,9 @@
            
                     
                 <li class="team-item">
-                    <img src="./images/Tom.jpg" alt="Developer" width="264" height="260">
+ <img srcset="./images/Tom1x.jpg 1x, ./images/Tom2x.jpg 2x" src="./images/Tom1x.jpg" alt="Developer"
+                                            width="264" height="260"> 
+
                     <div class="team-container">
                     <h3 class="team-item-title">Tom Ford</h3>
                     <p class="team-item-text">Frontend Developer</p>
@@ -209,7 +283,9 @@
                 
 
                 <li class="team-item">
-                    <img src="./images/Camila.jpg" alt="Marketing" width="264" height="260">
+                    <img srcset="./images/Camila1x.jpg 1x, ./images/Camila2x.jpg 2x" src="./images/Camila1x.jpg" alt="Marketing" width="264"
+                        height="260"> 
+
                     <div class="team-container">
                     <h3 class="team-item-title">Camila Garcia</h3>
                     <p class="team-item-text">Marketing</p>
@@ -259,7 +335,8 @@
                     
                         
                 <li class="team-item">
-                    <img src="./images/Daniel.jpg" alt="UI Designer" width="264" height="260">
+                    <img srcset="./images/Daniel1x.jpg 1x, ./images/Daniel2x.jpg 2x" src="./images/Camila1x.jpg" alt="UI Designer" width="264"
+                        height="260"> 
                     <div class="team-container">
                     <h3 class="team-item-title">Daniel Wilson</h3>
                     <p class="team-item-text">UI Designer</p>
@@ -314,7 +391,22 @@
             <ul class="projects-list list">
                 <li class="projects-item">
                     <div class="projects-list-img-wrapper">
-                    <img src="./images/Banking.jpg" alt="Banking App" width="360" height="300">
+                        <picture>
+                            <!-- Desktop screen -->
+                        
+                            <source media="(min-width: 1158px)" srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Tablet screen -->
+                        
+                            <source media="(min-width: 768px)" srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- Mobile screen -->
+                        
+                            <source media="(max-width: 767px)" srcset="./images/gallery/img-1_sm.jpg 1x, ./images/gallery/img-1_sm@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="card-img" src="./images/gallery/img-1_sm.jpg" alt="Ноутбук" width="360" height="300" loading="lazy" />
+                        </picture>
+                    <!-- <img src="./images/Banking.jpg" alt="Banking App" width="360" height="300"> -->
                     <p class="overlay">14 Stylish and User-Friendly App Design <br> Concepts · Task Manager App · Calorie <br> Tracker App · Exotic Fruit Ecommerce <br> App ·
                     Cloud Storage App
                     </p>
@@ -471,7 +563,7 @@
 
 
 
-    <div class="backdrop is-open">
+    <div class="backdrop  ">
         <div class="modal">
             <button type="button" class="close-btn">
                 <svg class="close-btn-icon" width="8" height="8" aria-label="modal close icon">
@@ -564,6 +656,11 @@
         </div>
 
     </div>
+
+
+
+  
+
 
 </body>
 </html>
